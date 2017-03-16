@@ -5,9 +5,11 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <div class="page-header__logo"></div>
+      <div class="page-header__logo">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=90×40&w=90&h=40" width="90" height="40" alt="Mishka">
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -61,12 +63,12 @@
         <div class="content-about__wrapper">
           <h1 class="content-about__title">Коротко о нас</h1>
           <ul class="content-about__items">
-            <li class="content-about__item">Экологически чистые материалы</li>
-            <li class="content-about__item">Скандинавский стиль по российской цене</li>
-            <li class="content-about__item">Увеличивает лайки на фотографиях</li>
-            <li class="content-about__item">Связано вручную с любовью и умилением</li>
-            <li class="content-about__item">Поддержка отечественного производителя</li>
-            <li class="content-about__item">Поставляется в подарочной упаковке</li>
+            <li class="content-about__item content-about__item--ecology">Экологически чистые материалы</li>
+            <li class="content-about__item content-about__item--nordic">Скандинавский стиль по российской цене</li>
+            <li class="content-about__item content-about__item--liketop">Увеличивает лайки на фотографиях</li>
+            <li class="content-about__item content-about__item--handmade">Связано вручную с любовью и умилением</li>
+            <li class="content-about__item content-about__item--support">Поддержка отечественного производителя</li>
+            <li class="content-about__item content-about__item--giftwrap">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
       </section>
@@ -103,10 +105,10 @@
     </main>
     <footer class="page-footer"
       <div class="page-footer__wrapper">
-        <section class="social-items">
-          <a class="social-item  social-item--youtube" href="#">Instagram<img class="social-img social-img--instagram" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
-          <a class="social-item  social-item--facebook" href="#">Facebook<img class="social-img social-img--facebook" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
-          <a class="social-item  social-item--twitter" href="#">Twitter<img class="social-img social-img--twitter" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
+        <section class="social-link">
+          <a class="social-link__item  social-link__item--youtube" href="#">Instagram<img class="social-link__img social-link__item--instagram"></a>
+          <a class="social-link__item  social-link__item--facebook" href="#">Facebook<img class="social-link__item social-link__item--facebook"></a>
+          <a class="social-link__item  social-link__item--twitter" href="#">Twitter<img class="social-link__item social-link__item--twitter"></a>
         </section>
       </div>
       <div class="designed">

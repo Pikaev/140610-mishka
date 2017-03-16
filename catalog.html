@@ -5,9 +5,11 @@
     <title>HTML Academy: Каталог</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <div class="page-header__logo"></div>
+      <div class="page-header__logo">
+        <a href="index.html" alt="Mishka"><img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=90×40&w=90&h=40" width="90" height="40" alt="Mishka"></a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -20,47 +22,43 @@
         </div>
       </nav>
       <section class="page-header__description">
-        <div class="page-header__wrapper">
-          <h1 class="page-header__title">Каталог товаров</h1>
-        </div>
+        <h1 class="page-header__title">Каталог товаров</h1>
       </section>
     </header>
     <main class="content-goods">
-      <div class="content-goods__wrapper">
-        <div class="goods">
-          <div class="goods__photo"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×200&w=260&h=200"></div>
-          <h2 class="goods__title">Зайчик-попрыгайчик</h2>
-          <div class="goods__description"><p>Рост 30 см, вес 200 г</p></div>
-          <div class="goods__price"><p>1 200 руб.</p></div>
-        </div>
-        <div class="goods">
-          <div class="goods__photo"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×200&w=260&h=200"></div>
-          <h2 class="goods__title">Корзинка для белья</h2>
-          <div class="goods__description"><p>Диаметр 15 см, высота 10 см</p></div>
-          <div class="goods__price"><p>690 руб.</p></div>
-        </div>
-        <div class="goods">
-          <div class="goods__photo"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×200&w=260&h=200"></div>
-          <h2 class="goods__title">Большая корзинка для игрушек</h2>
-          <div class="goods__description"><p>Диаметр 30 см, высота 30 см</p></div>
-          <div class="goods__price"><p>1 500 руб.</p></div>
-        </div>
-        <div class="content-goods__production">
-          <h2 class="content-goods__video-title">Процесс производства</h2>
-          <div class="content-goods__video"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×150&w=260&h=150"></div>
-          <div class="content-goods__video-description"><p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p></div>
-          <div class="content-goods__order">
-            <a class="btn  btn--goods" href="#">Сделать заказ</a>
-          </div>
+      <div class="goods">
+        <div class="goods__photo"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×200&w=260&h=200"></div>
+        <h2 class="goods__title">Зайчик-попрыгайчик</h2>
+        <div class="goods__description">Рост 30 см, вес 200 г</div>
+        <div class="goods__price">1 200 руб.</div>
+      </div>
+      <div class="goods">
+        <div class="goods__photo"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×200&w=260&h=200"></div>
+        <h2 class="goods__title">Корзинка для белья</h2>
+        <div class="goods__description">Диаметр 15 см, высота 10 см</div>
+        <div class="goods__price">690 руб.</div>
+      </div>
+      <div class="goods">
+        <div class="goods__photo"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×200&w=260&h=200"></div>
+        <h2 class="goods__title">Большая корзинка для игрушек</h2>
+        <div class="goods__description">Диаметр 30 см, высота 30 см</div>
+        <div class="goods__price">1 500 руб.</div>
+      </div>
+      <div class="content-goods__production">
+        <h2 class="content-goods__video-title">Процесс производства</h2>
+        <div class="content-goods__video"><img src="https://placeholdit.imgix.net/~text?txtsize=24&txt=260×150&w=260&h=150"></div>
+        <div class="content-goods__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+        <div class="content-goods__order">
+          <a class="btn  btn--goods" href="#">Сделать заказ</a>
         </div>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <section class="social-items">
-          <a class="social-item  social-item--youtube" href="#">Instagram<img class="social-img social-img--instagram" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
-          <a class="social-item  social-item--facebook" href="#">Facebook<img class="social-img social-img--facebook" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
-          <a class="social-item  social-item--twitter" href="#">Twitter<img class="social-img social-img--twitter" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
+        <section class="social-link">
+          <a class="social-link__item  social-link__item--youtube" href="#">Instagram<img class="social-link__img social-link__item--instagram"></a>
+          <a class="social-link__item  social-link__item--facebook" href="#">Facebook<img class="social-link__item social-link__item--facebook"></a>
+          <a class="social-link__item  social-link__item--twitter" href="#">Twitter<img class="social-link__item social-link__item--twitter"></a>
         </section>
       </div>
       <div class="designed">
