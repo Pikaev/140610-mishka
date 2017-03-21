@@ -7,29 +7,27 @@
   </head>
   <body class="page">
     <header class="page-header">
+      <div class="page-header__wrapper">
       <div class="page-header__logo">
         <a href="index.html" alt="Mishka"><img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=90×40&w=90&h=40" width="90" height="40" alt="Mishka"></a>
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--active">Каталог товаров</li>
-            <li class="main-nav__item"><a>Вязание на заказ</a></li>
-            <li class="main-nav__item"><a>Поиск по сайту</a></li>
-            <li class="main-nav__item"><a>Корзина: пока пуста</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--active"><a>Вязание на заказ</a></li>
+          <li class="main-nav__item"><a>Поиск по сайту</a></li>
+          <li class="main-nav__item"><a>Корзина: пока пуста</a></li>
+        </ul>
       </nav>
+    </div>
       <section class="page-header__description">
-        <div class="page-header__wrapper">
-          <h1 class="page-header__title">Вязание на заказ</h1>
-        </div>
+        <h1 class="page-header__title page-header__title--caption">Вязание на заказ</h1>
       </section>
     </header>
     <form class="form" method="post" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data">
-      <div class="form-wrapper">
-        <div class="form__description"><p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p></div>
+      <div class="form__wrapper">
+        <div class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
           <fieldset class="form__fieldset">
             <legend class="form__title form__title--legend">Тип</legend>
             <div class="form__group">
@@ -101,7 +99,7 @@
               <textarea class="form__input" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
-          <div class="form__text-required"><p>*Поля обязательны для заполнения</p></div>
+          <div class="form__text-required">*Поля обязательны для заполнения</div>
           <div class="contacts__write">
             <a class="btn  btn--order" href="#">Отправить заказ</a>
           </div>
@@ -114,9 +112,7 @@
           <a class="social-link__item  social-link__item--facebook" href="#">Facebook<img class="social-link__item social-link__item--facebook"></a>
           <a class="social-link__item  social-link__item--twitter" href="#">Twitter<img class="social-link__item social-link__item--twitter"></a>
         </section>
-      </div>
-      <div class="designed">
-        <div class="designed__wrapper">
+        <div class="designed">
           <p class="designed__text">Разработано</p>
           <img class="designed__logo" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=30×35&w=30&h=35" width="30" height="35">
         </div>
