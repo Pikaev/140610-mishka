@@ -10,14 +10,30 @@
 
 .tab__item {
   padding: 30px;
+
+  &--interior {
+    background-color: #63d1bb;
+    padding-right: 150px;
+  }
+
+  &--kidstoys {
+    background-color: #56c3b2;
+    padding-right: 150px;
+  }
 }
 
-.tab__item--top {
-  background-color: #63d1bb;
-  padding-right: 150px;
+@media (min-width: @tablet-widths) {
+  .tab__items {
+    display: flex;
+  }
+
+  .tab__item {
+    width: 50%;
+  }
 }
 
-.tab__item--bottom {
-  background-color: #56c3b2;
-  padding-right: 150px;
+@media (min-width: @desktop-widths) {
+  .tab__item {
+    padding-right: 320px;
+  }
 }

@@ -6,3 +6,25 @@
   .container();
   .outlines();
 }
+
+.social-link {
+  width: 100%;
+}
+
+@media (min-width: @tablet-widths) {
+  .page-footer__wrapper {
+    display: flex;
+  }
+
+  .designed__logo {
+    order: 0;
+  }
+
+  .social-link {
+    order: 1;
+  }
+
+  .designed {
+    order: 2
+  }
+}
