@@ -149,14 +149,14 @@
 
 @media (min-width: @tablet-widths) {
   .main-nav {
-      display: flex;
-      flex-wrap: wrap;
-      width: auto;
+    .container();
+    .outlines();
   }
 
   .main-nav__wrapper {
-    .container();
-    .outlines();
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
   }
 
   .main-nav__toggle {
