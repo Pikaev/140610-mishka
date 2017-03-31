@@ -7,20 +7,28 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="page-header__wrapper">
-      <div class="page-header__logo">
-        <a href="index.html" alt="Mishka"><img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=90×40&w=90&h=40" width="90" height="40" alt="Mishka"></a>
+      <div class="main-nav__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="page-header__logo">
+            <a href="index.html"><img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=90×40&w=90&h=40" width="90" height="40" alt="Mishka"></a>
+          </div>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__items main-nav__items--sale">
+            <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item"><a href="#">Распродажа</a></li>
+          </ul>
+          <ul class="main-nav__user">
+            <li class="main-nav__user-item main-nav__user-item--search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__user-item main-nav__user-item--basket"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+          <div class="main-nav__free-shipping">Бесплатная доставка по России</div>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item main-nav__item--active"><a>Вязание на заказ</a></li>
-          <li class="main-nav__item"><a>Поиск по сайту</a></li>
-          <li class="main-nav__item"><a>Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div class="page-header__wrapper">
       <section class="page-header__description">
         <h1 class="page-header__title page-header__title--caption">Вязание на заказ</h1>
       </section>
@@ -118,5 +126,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
   </body>
 </html>

@@ -1,7 +1,21 @@
 @font-face {
-    font-family: "opensans";
-    src:
-        local("opensans");
+  font-weight: normal;
+  font-family: "opensans";
+  font-style: normal;
+  src:
+    local("opensans"),
+    url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "opensans";
+  font-style: normal;
+  src:
+    local("opensansbold"),
+    url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
 }
 
 .page {
@@ -14,4 +28,17 @@
   color: #444444;
   background-color: #ffffff;
   outline: 1px solid black;
+  margin: 0 auto;
+  @media (min-width: @tablet-widths) {
+    width: @tablet-widths;
+  }
+
+  @media (min-width: @desktop-widths) {
+    width: @desktop-widths;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
